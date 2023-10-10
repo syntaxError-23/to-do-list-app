@@ -1,0 +1,122 @@
+*{
+    font-family: 'Roboto', helvetica, sans-serif;
+    color: rgb(31, 61, 68);
+}
+
+html{
+    background-color: #c7e9ed;
+}
+
+body{
+    width: 90%;
+    margin: 20px auto;
+    background-color: #9bbbbf;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+
+h1, h4{
+    text-align: center;
+}
+
+/* TODO INPUT AREA*/
+
+.input-area {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.todo-input{
+    width: 75%;
+    padding: 4px 4px 4px 5px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #c8dce6;
+}
+
+.todo-input:focus{
+    box-sizing: border-box;
+    outline: #1a5c78;
+    outline-style: solid;
+    outline-width: 1px;
+    box-shadow: 0 0 10px #6b9fd3;
+}
+
+#todo-button{
+    width: 20%;
+    background-color: #1a5c78;
+    border: none;
+    border-radius: 4px;
+    color: azure;
+    transition-timing-function: ease-in-out;
+    transition: background-color 0.07s, outline 0.1s;
+    transition-delay: 0.01s;
+    padding: 5px 0;
+}
+
+#todo-button:hover{
+    outline-color: #c8dce6;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+#todo-button:active{
+    background-color: #0d2430;
+}
+
+ul{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    padding: 0;
+}
+
+li, li.incomplete{
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 70%;
+    margin: 10px auto;
+    padding: 20px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    transition-timing-function: ease-in-out;
+    transition: background-color 0.3s, color 0.3s 0.15s; 
+    align-items: center;
+}
+
+li.completed{
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-self: flex-end;
+    color:rgba(0, 0, 0, 0.35);
+    transition-timing-function: ease-in-out;
+    transition: background-color 1s;
+    vertical-align: bottom;
+}
+
+.check-and-button{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.unchanged, .checked, .unchecked{
+    border-style: solid;
+    border-width: 5px;
+    margin-right: 10px;
+    margin-left: 10px; 
+}
+
+.delete-button{
+    background-color: #1a5c78;
+    border: none;
+    border-radius: 4px;
+    color: azure;
+    transition-timing-function: ease-in-out;
+    transition: background-color 0.07s, outline 0.1s;
+    transition-delay: 0.01s;
+    padding: 10px;
+}
